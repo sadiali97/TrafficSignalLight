@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sadia ali</title>
+<style type="text/css">
+body{
+	background: linear-gradient(#08f, #fff);
+	background-repeat: no-repeat;
+  	padding: 40px;
+  	width: 170px;
+  	height: 100%;
+  	margin: 0 auto;
+}
+button {
+	box-shadow:inset 1px 22px 19px -2px #f2fadc;
+	background:linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+	background-color:#dbe6c4;
+	border-radius:6px;
+	border:2px solid #b2b8ad;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:15px 69px;
+	text-decoration:none;
+	text-shadow:1px 2px 32px #ced9bf;
+}
+button:hover {
+	background:linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+	background-color:#9ba892;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+#light1{
+	background-color:#F6846D; 
+	width: 100px; 
+	height: 100px; 
+	border-radius:50px; 
+	margin: 10px;
+}
+#light2{
+	background-color:#EDF77B; 
+	width: 100px; 
+	height: 100px; 
+	border-radius:50px; 
+	margin: 10px;
+}
+#light3{
+	background-color:#A6FE91; 
+	width: 100px; 
+	height: 100px; 
+	border-radius:50px; 
+	margin: 10px;
+}
+#div1{
+	background-color: black; 
+	width: 150px;
+	height: 350px;
+	padding: 10PX;
+	margin:10px;
+}
+</style>
+</head>
+<body>
+	<center>
+	<div id="div1">
+<div id="light1"></div>
+<div id="light2"></div>
+<div id="light3"></div>
+</div>
+</center>
+<button onclick="bg1()">STOP&ensp;</button>
+<button onclick="bg2()">READY</button>
+<button onclick="bg3()">GO&ensp;&ensp;&ensp;</button>
+	<script type="text/javascript">
+		function bg1(){
+		change = document.getElementById('light1');
+		if(change.style.backgroundColor = "#ff0000");
+		document.getElementById('light2').style.backgroundColor = "#EDF77B";
+		document.getElementById('light3').style.backgroundColor = "#A6FE91";
+	}
+	function bg2(){
+		change = document.getElementById('light2');
+		if(change.style.backgroundColor = "#f2f41b");
+		document.getElementById('light1').style.backgroundColor = "#F6846D";
+		document.getElementById('light3').style.backgroundColor = "#A6FE91";
+	}
+	function bg3(){
+		change = document.getElementById('light3');
+		if(change.style.backgroundColor = "#1A8F1A");
+		document.getElementById('light2').style.backgroundColor = "#EDF77B";
+		document.getElementById('light1').style.backgroundColor = "#F6846D";
+	}
+	</script>
+</body>
+</html>
